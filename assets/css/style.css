@@ -160,3 +160,7 @@ input:focus{
 .tarea1:focus{
   outline:none;
 }
+
+.fa-pencil{
+  display: inline-block;
+}
