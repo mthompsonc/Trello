@@ -1,3 +1,4 @@
+/*Selector universal, para designar font family, margin, padding y box sizing bordex-box*/
 * {
   font-family: 'Yantramanav', sans-serif;
   margin: 0;
@@ -7,15 +8,23 @@
           box-sizing: border-box;
 }
 
+/*Sección Nav*/
+body{
+  background-color: #1B8FC4;
+}
+
 nav{
   width: auto;
   height: 60px;
   background-color: #167BA9;
+  padding-top: 10px;
 }
 
+/*Botón Tablero*/
 .tablero{
   width: 107px;
   height: 35px;
+  vertical-align: top;
   font-size: 18px;
   text-align: center;
   border-radius: 3px;
@@ -23,14 +32,14 @@ nav{
   background-color: #8EC2D8;
   display: inline-block;
 }
-
+/*clase para todos los botones o links que están en el nav*/
 .wLink{
   color:#FFFFFF;
   line-height: 2.5;
   text-align: center;
   text-decoration: none;
 }
-
+/*div que envuelve todo lo que involucra a la parte de búsqueda*/
 .search{
   width: 200px;
   height: 35px;
@@ -48,7 +57,12 @@ nav{
   background-color: #69A5C2;
   outline: 2px solid red;
 }
-
+.fa-search /*icono*/{
+  vertical-align: top;
+  line-height: 2;
+  margin-left: 7px;
+}
+/*div Logotipo*/
 .logo{
   width: 85px;
   height: 23px;
@@ -57,9 +71,10 @@ nav{
   background-size: 100%;
 }
 
-.btn /*div*/{
+.btn /*div de botones*/{
   width: 37px;
   height: 35px;
+  vertical-align: top;
   background-color: #69A5C2;
   border-radius: 4px;
   display: inline-block;
@@ -67,20 +82,55 @@ nav{
   font-weight: 700;
 }
 
+/*contenido boton info.*/
 .circle {
  width: 26px;
  height: 26px;
  border-radius: 100%;
  border: 2px solid #FFFFFF;
- line-height: 1.8;
  text-align: center;
+ margin-left: 5px;
+ margin-top: 4px;
 }
 
+.i{
+  line-height: 1.8;
+  font-weight: bold;
+  font-size: 14px;
+  font-style: italic;
+}
+/*campana*/
+.fa-bell-o{
+font-weight: bold;
+}
+
+/*boton user*/
 .user{
   width: 37px;
   height: 35px;
   border-radius: 50%;
   background-image: url(../../../1Twitter/assets/img/user.png);
   background-size: 100%;
+  display: inline-block;
+}
+
+
+#anadir {
+ margin-top: 100px;
+ margin-left: 20px;
+ background-color: rgba(0,0,0,.15);
+ border: none;
+ border-radius: 3px;
+ height: 40px;
+ width: 270px;
+ color: #f3f3f3 ;
+ text-align: left;
+ filter: opacity(80%);
+ padding-left: 5px;
+}
+
+#form{
+  margin-top: 100px;
+  margin-left: 20px;
   display: inline-block;
 }
