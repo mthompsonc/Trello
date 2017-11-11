@@ -134,3 +134,7 @@ font-weight: bold;
   margin-left: 20px;
   display: inline-block;
 }
+
+.tTarjeta {
+  color: red;
+}
