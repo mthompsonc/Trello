@@ -152,3 +152,11 @@ font-weight: bold;
 .btn4{
   color:blue;
 }
+
+input:focus{
+  outline:none;
+}
+
+.tarea1:focus{
+  outline:none;
+}

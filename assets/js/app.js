@@ -35,16 +35,28 @@ btn2.addEventListener('click', function(){
 
   abtn3.addEventListener('click', function(){
     divbtn3.style.display='none';
-    var divtextarea1= document.createElement('div');
+    var divtextarea1 = document.createElement('div');
     var textarea1 = document.createElement('textarea');
     var btn4 = document.createElement('button');
     var tbtn4= document.createTextNode('Añadir una tarea')
+
     textarea1.classList.add('tarea1');
     btn4.classList.add('btn4');
     btn4.appendChild(tbtn4);
     divtextarea1.appendChild(textarea1);
     divtextarea1.appendChild(btn4);
     container.appendChild(divtextarea1);
+
+    btn4.addEventListener('click', function(){
+      var tareatextarea = textarea1.value;
+      textarea1.value= '';
+      var tareatext = document.createTextNode(tareatextarea);
+      var ptarea = document.createElement('p');
+      var divtarea = document.createElement('div');
+      ptarea.appendChild(tareatext);
+      divtarea.appendChild(ptarea);
+      container.insertBefore(divtarea, divtextarea1);
+    })
  })
 }
 )
