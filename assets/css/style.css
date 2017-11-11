@@ -137,4 +137,18 @@ font-weight: bold;
 
 .tTarjeta {
   color: red;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+.btn3{
+  color: pink;
+}
+
+.tarea1{
+  color: green;
+}
+
+.btn4{
+  color:blue;
 }
