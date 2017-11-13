@@ -10,12 +10,13 @@
 
 /*Sección Nav*/
 body{
+  width: 100%;
   background-color: #1B8FC4;
 }
 
 nav{
-  width: auto;
-  height: 60px;
+  width: 100%;
+  height: 55px;
   background-color: #167BA9;
   padding-top: 10px;
 }
@@ -29,9 +30,16 @@ nav{
   text-align: center;
   border-radius: 3px;
   color: #FFFFFF;
-  background-color: #8EC2D8;
+  background-color: #69A5C2;
   display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
 }
+
+#tab{
+  line-height: 2;
+}
+
 /*clase para todos los botones o links que están en el nav*/
 .wLink{
   color:#FFFFFF;
@@ -47,15 +55,24 @@ nav{
   border-radius: 4px;
   background-color: #69A5C2;
   display: inline-block;
+  vertical-align: top;
 }
 
-#search1 /*textarea*/{
+input#search1 /*input*/{
   width: 170px;
-  height: 35px;
+  height: 30px;
   border: none;
   border-radius: 4px;
   background-color: #69A5C2;
-  outline: 2px solid red;
+  resize: none;
+  line-height: 2.2;
+  font-size: 16px;
+  padding-left: 8px;
+  color: #FFFFFF;
+}
+
+#search1:focus{
+  outline: none;
 }
 .fa-search /*icono*/{
   vertical-align: top;
@@ -69,6 +86,9 @@ nav{
   background-image: url(../img/logo.png);
   display: inline-block;
   background-size: 100%;
+  margin-left: 260px;
+  margin-right: 400px;
+  vertical-align: super;
 }
 
 .btn /*div de botones*/{
@@ -80,6 +100,7 @@ nav{
   display: inline-block;
   text-align: center;
   font-weight: 700;
+  margin-right: 5px;
 }
 
 /*contenido boton info.*/
@@ -113,10 +134,72 @@ font-weight: bold;
   background-size: 100%;
   display: inline-block;
 }
+/*Sección Header*/
+/*Texto tablero reto codigo*/
+h3{
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 22px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-right: 15px;
+  display: inline-block;
+}
 
+/*estrella*/
+.fa-star-o{
+  color: #FFFFFF;
+}
 
-#anadir {
- margin-top: 100px;
+.fa-star-o:hover{
+  color:#e2cd14;
+  font-weight: bold;
+}
+/*Candado y texto*/
+.private{
+  display: inline-block;
+  color: #FFFFFF;
+  margin-left: 10px;
+  font-weight: 400;
+}
+/*puntos*/
+.points{
+  color: #FFFFFF;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 780px;
+}
+
+.points:after{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/*Menu*/
+.menu{
+  color: #FFFFFF;
+  text-decoration: underline;
+  display: inline-block;
+  margin-left: 10px;
+}
+/*tarjetas*/
+
+.tTarjeta /*clase del div contenedor*/{
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: #c9c9c9;
+  border: none;
+  border-radius: 3px;
+  min.height: 40px;
+  width: 270px;
+  color: #000000 ;
+  text-align: left;
+  filter: opacity(90%);
+}
+
+#anadir /*primer boton añadir tarjeta*/{
+ margin-top: 20px;
  margin-left: 20px;
  background-color: rgba(0,0,0,.15);
  border: none;
@@ -130,37 +213,95 @@ font-weight: bold;
 }
 
 #form{
-  margin-top: 100px;
+  margin-top: 20px;
   margin-left: 20px;
-  display: inline-block;
+  background-color: #c9c9c9;
+  border: none;
+  border-radius: 3px;
+  min.height: 40px;
+  width: 270px;
+  color: #e0dfdf ;
+  text-align: left;
+  filter: opacity(90%);
+  padding-left: 5px;
 }
 
-.tTarjeta {
-  color: red;
-  margin-top: 100px;
-  margin-left: 20px;
+#primerInput{
+  margin-top: 10px;
+  margin-left: 5px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 3px;
+  height: 40px;
+  width: 250px;
+  color: #000000;
+  text-align: left;
+  filter: opacity(90%);
+  padding-left: 5px;
+}
+
+#saveButton/*segundo botón para añadir el titulo*/{
+  margin: 10px 5px;
+  padding: 10px 20px;
+  background-color: #6EC156;
+  color: #FFFFFF;
+  border-radius: 3px;
+  border: none;
+}
+
+h4/*titulo de la tarjeta*/{
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #999;
 }
 
 .btn3{
-  color: pink;
+  height: 40px;
+  width: 250px;
+  border: none;
+  background-color: #c9c9c9;
+  color: #555553;
 }
 
 .tarea1{
-  color: green;
-}
-
-.btn4{
-  color:blue;
-}
-
-input:focus{
-  outline:none;
+  height: 40px;
+  width: 250px;
+  color: #000000;
+  resize: none;
 }
 
 .tarea1:focus{
   outline:none;
 }
 
+.btn4{
+  margin: 10px 5px;
+  padding: 10px 20px;
+  background-color: #6EC156;
+  color: #FFFFFF;
+  border-radius: 3px;
+  border: none;
+}
+
+.divtarea{
+  height: 40px;
+  width: 250px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  line-height: 2.2;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 5px #999;
+}
+
+input:focus{
+  outline:none;
+}
+
 .fa-pencil{
-  display: inline-block;
+  margin-right: 10px;
+  line-height: 2.2;
+  color:#868686;
+  float: right;
+
 }

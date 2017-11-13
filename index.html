@@ -12,9 +12,9 @@
 <body>
   <nav>
     <!-- botón tablero -->
-    <div class="tablero"><a href="#" class="wLink"><i class="fa fa-trello" aria-hidden="true"></i> Tableros</a></div>
+    <div class="tablero"><a href="#" class="wLink" id="tab"><i class="fa fa-trello" aria-hidden="true"></i> Tableros</a></div>
     <!-- textarea search con el botón lupa-->
-    <div class="search"><textarea id="search1" name="name" rows="1" cols="80"></textarea><a href="#" class="wLink"><i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i></a></div>
+    <div class="search"> <input type="text" id="search1"><a href="#" class="wLink"><i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i></a></div>
     <!-- logo trello -->
     <div class="logo"></div>
     <!-- botón + -->
@@ -36,36 +36,23 @@
     <div class="menu">
       <a href="#">Mostrar menú</a>
     </div>
-    <hr>
   </header>
   <!-- Sección de las tarjetas de trello -->
   <section id="cards">
     <div id="contenedor">
-
+      <!-- Esta sección es para contener todos los datos a partir del título de la tarjeta hasta la lista de tareas. -->
     </div>
     <div id="card">
+      <!-- Esta sección contiene el primer botón hasta el input y el segundo botón el cual agrega el título -->
       <button type="button" id="anadir">Añade una tarjeta..</button>
 
       <form id="form"  action="javascript:void(0)">
 
         <input type="text" name="formularioLista" id="primerInput" placeholder="Agrega una lista">
 
-        <button id="SaveButton">Guardar</button>
+        <button id="saveButton">Guardar</button>
       </form>
-
     </div>
-
-<!--
-<div id="container">
- <button id="btnAdd" type="button" name="button">Add a list...</button>
-
- <form class="" action="javascript:void(0)">
-   <input placeholder="Add a list.." type="text" name="" value="">
-   <button type="button" name="button"></button>
- </form>
-</div>
- -->
-
   </section>
 
   <script type="text/javascript" src="assets/js/app.js"></script>
