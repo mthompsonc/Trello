@@ -48,7 +48,7 @@ nav{
   text-decoration: none;
 }
 /*div que envuelve todo lo que involucra a la parte de búsqueda*/
-.search{
+.search {
   width: 200px;
   height: 35px;
   border: none;
@@ -71,7 +71,7 @@ input#search1 /*input*/{
   color: #FFFFFF;
 }
 
-#search1:focus{
+#search1:focus {
   outline: none;
 }
 .fa-search /*icono*/{
@@ -119,6 +119,7 @@ input#search1 /*input*/{
   font-weight: bold;
   font-size: 14px;
   font-style: italic;
+  padding-right: 2px;
 }
 /*campana*/
 .fa-bell-o{
@@ -162,6 +163,10 @@ h3{
   margin-left: 10px;
   font-weight: 400;
 }
+
+.private1{
+  margin-left: 5px;
+}
 /*puntos*/
 .points{
   color: #FFFFFF;
@@ -191,7 +196,7 @@ h3{
   background-color: #c9c9c9;
   border: none;
   border-radius: 3px;
-  min.height: 40px;
+  min-height: 40px;
   width: 270px;
   color: #000000 ;
   text-align: left;
@@ -218,7 +223,7 @@ h3{
   background-color: #c9c9c9;
   border: none;
   border-radius: 3px;
-  min.height: 40px;
+  min-height: 40px;
   width: 270px;
   color: #e0dfdf ;
   text-align: left;
@@ -240,8 +245,21 @@ h3{
   padding-left: 5px;
 }
 
-#saveButton/*segundo botón para añadir el titulo*/{
-  margin: 10px 5px;
+.btn3{
+  color: pink;
+}
+
+.tarea1{
+  color: green;
+}
+
+.btn4{
+  color:blue;
+}
+
+#saveButton{
+  float: right;
+  margin: 10px 11px;
   padding: 10px 20px;
   background-color: #6EC156;
   color: #FFFFFF;
