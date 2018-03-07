@@ -242,7 +242,8 @@ h3{
   color: #000000;
   text-align: left;
   filter: opacity(90%);
-  padding-left: 5px;
+  padding-left: 9px;
+  font-size: 13px;
 }
 
 .btn3{
@@ -284,8 +285,12 @@ h4/*titulo de la tarjeta*/{
 .tarea1{
   height: 40px;
   width: 250px;
+  font-size: 13px;
   color: #000000;
   resize: none;
+  border: none;
+  padding: 10.5px;
+  border-radius: 5px;
 }
 
 .tarea1:focus{
@@ -293,12 +298,13 @@ h4/*titulo de la tarjeta*/{
 }
 
 .btn4{
-  margin: 10px 5px;
+  margin: 11px 12px;
   padding: 10px 20px;
   background-color: #6EC156;
   color: #FFFFFF;
   border-radius: 3px;
   border: none;
+  float: right;
 }
 
 .divtarea{
